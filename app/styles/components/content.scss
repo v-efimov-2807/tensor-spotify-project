@@ -1,0 +1,13 @@
+@import '../common/variables.scss';
+
+.content {
+    padding: 40px 55px;
+
+    @media (max-width: $tablet-break) {
+        padding: 30px 35px;
+    }
+
+    @media (max-width: $mobile-break) {
+        padding: 30px 15px;
+    }
+}

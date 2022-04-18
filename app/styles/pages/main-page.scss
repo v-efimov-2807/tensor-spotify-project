@@ -1,0 +1,7 @@
+@import '../common/variables.scss';
+
+.main-page {
+    display: flex;
+    min-width: $min-resolution;
+    background-color: $background-color;
+}

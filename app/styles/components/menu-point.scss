@@ -1,0 +1,48 @@
+@import '../common/variables.scss';
+
+.menu-point {
+    padding: 0px 30px;
+    cursor: pointer;
+}
+
+.menu-point__text {
+	color: $primary-text;
+	font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.menu-point_active {
+    color: $green;
+}
+
+.menu-point__text_uppercase {
+    text-transform: uppercase;
+}
+
+.menu-point__icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 22px;
+    fill: $white;
+    opacity: 0.5;
+}
+
+.menu-point__sub-point {
+    display: flex;
+    align-items: center;
+    padding: 11px 53px;
+
+    &:hover {
+        background-color: $point-hover;
+    }
+}
+
+.menu-point__sub-point_active {
+    background-color: $point-hover;
+    border-left: 3px solid $violet;
+
+    .menu-point__icon {
+        fill: $violet;
+    }
+}

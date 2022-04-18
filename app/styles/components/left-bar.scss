@@ -1,0 +1,68 @@
+@import '../common/variables.scss';
+
+.left-bar {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: $left-bar-color;
+
+    @media (max-width: $mobile-break) {
+        padding: 14px 8px 0px 8px;
+    }
+}
+
+.left-bar__logo {
+    display: block;
+    padding: 19px 122px 15px 30px;
+    border-bottom: 1px solid $gray-border;
+    
+    @media (max-width: $mobile-break) {
+        display: none;
+    }
+}
+
+.left-bar__img {
+    width: 127px;
+    height: 37px;
+}
+
+.left-bar__burger {
+    display: none;
+
+    @media (max-width: $mobile-break) {
+        display: flex;
+    }
+}
+
+.left-bar__burger-icon {
+    width: 16px;
+    height: 13px;
+    stroke: $white;
+}
+
+.left-bar__menu {
+    border-bottom: 1px solid $gray-border;
+}
+
+.left-bar__spacer {
+    flex-grow: 1;
+}
+
+.left-bar__mailing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 30px 30px;
+    color: $secondary-text;
+
+    @media (max-width: $mobile-break) {
+        display: none;
+    }
+}
+
+.left-bar__switcher {
+    display: flex;
+}

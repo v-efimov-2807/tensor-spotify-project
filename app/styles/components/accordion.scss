@@ -1,0 +1,43 @@
+@import '../common/variables.scss';
+
+.accordion {
+    width: 100%;
+    color: $primary-text;
+    overflow: hidden;
+}
+
+.accordion__input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.accordion__label {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    
+    &::after {
+        content: "\276E";
+        transform: rotate(-90deg);
+        transition: all .35s;
+    }
+}
+
+.accordion__content {
+    max-height: 0;
+    transition: all .35s;
+}
+
+.accordion__input:checked {
+    + .accordion__label {
+        &::after {
+            margin-bottom: 18px;
+            transform: rotate(90deg);
+        }
+    }
+    
+    ~ .accordion__content {
+        max-height: 100vh;
+    }
+}
