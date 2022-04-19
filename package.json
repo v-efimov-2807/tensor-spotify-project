@@ -1,0 +1,16 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Empty",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Vladimir Efimov",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.13"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,20 @@
+@import '../common/variables.scss';
+
+.info-plate {
+    color: $primary-text;
+    background: $violet-button;
+    box-shadow: $violet-box-shadow;
+    border-radius: 4px;
+}
+
+.info-plate_small {
+    padding: 2px 11px 2px 8px;
+    font-size: 11px;
+    line-height: 10px;
+}
+
+.info-plate_medium {
+    padding: 4px 5px 4px 6px;
+    font-size: 12px;
+    line-height: 12px;
+}

@@ -1,0 +1,42 @@
+@import '../common/variables.scss';
+
+.switcher {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 42px;
+    height: 22px;
+    border: 1px solid $switcher-border;
+    border-radius: 15px;
+    background-color: $left-bar-color;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+         -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+
+    &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        margin: 2px;
+        background-color: $violet;
+        box-shadow: $violet-box-shadow;
+        border-radius: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:checked {
+        background-color: $green;
+
+        &:before {
+            transform: translateX(+125%);
+        }
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}

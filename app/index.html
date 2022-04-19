@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Tensor-Project</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+</head>
+<body>
+    <div class="main-page">
+        <aside class="main-page__left-bar left-bar">
+            <a href="#" class="left-bar__logo">
+                <img class="left-bar__img" src="./assets/images/logo.png" alt="logo"/>
+            </a>
+            <button class="left-bar__burger button button_tablet">
+                <svg class="left-bar__burger-icon">
+                    <use xlink:href="/assets/icons/icons.svg#burger"></use>
+                </svg>
+            </button>
+            <ul class="left-bar__menu menu">
+                <li class="menu__menu-point menu-point">
+                    <span class="menu-point__text menu-point__text_uppercase menu-point_active">Главная</span>
+                </li>
+                <li class="menu__accordion accordion">
+                    <input class="accordion__input" type="checkbox" id="chck2">
+                    <label class="accordion__label menu-point menu-point__text menu-point__text_uppercase" for="chck2">Мои плейлисты</label>
+                    <ul class="accordion__content">
+                        <li class="menu__menu-point menu-point menu-point__sub-point">
+                            <svg class="menu-point__icon">
+                                <use xlink:href="/assets/icons/icons.svg#sword"></use>
+                            </svg>
+                            <span class="menu-point__text">Пункт 1</span>
+                        </li>
+                        <li class="menu__menu-point menu-point menu-point__sub-point">
+                            <svg class="menu-point__icon">
+                                <use xlink:href="/assets/icons/icons.svg#rocket"></use>
+                            </svg>
+                            <span class="menu-point__text">Пункт 2</span>
+                        </li>
+                        <li class="menu__menu-point menu-point menu-point__sub-point">
+                            <svg class="menu-point__icon">
+                                <use xlink:href="/assets/icons/icons.svg#puzzle"></use>
+                            </svg>
+                            <span class="menu-point__text">Пункт 3</span>
+                        </li>
+                        <li class="menu__menu-point menu-point menu-point__sub-point">
+                            <svg class="menu-point__icon">
+                                <use xlink:href="/assets/icons/icons.svg#rook"></use>
+                            </svg>
+                            <span class="menu-point__text">Пункт 4</span>
+                        </li>
+                        <li class="menu__menu-point menu-point menu-point__sub-point">
+                            <svg class="menu-point__icon">
+                                <use xlink:href="/assets/icons/icons.svg#cube"></use>
+                            </svg>
+                            <span class="menu-point__text">Пункт 5</span>
+                        </li>
+                        <li class="menu__menu-point menu-point menu-point__sub-point">
+                            <svg class="menu-point__icon">
+                                <use xlink:href="/assets/icons/icons.svg#ball"></use>
+                            </svg>
+                            <span class="menu-point__text">Пункт 6</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__menu-point menu-point">
+                    <span class="menu-point__text menu-point__text_uppercase">Поиск</span>
+                </li>
+            </ul>
+            <div class="left-bar__spacer"></div>
+            <div class="left-bar__mailing">
+                <div class="left-bar__mailing-text">Получить рассылку</div>
+                <div class="left-bar__switcher">
+                    <input type="checkbox" name="isMailing" class="switcher">
+                </div>
+            </div>
+        </aside>
+        <main class="main-page__container">
+            <header class="main-page__header header">
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li class="navigation__point">
+                            FAQ
+                        </li>
+                        <li class="navigation__point">
+                            Поддержка
+                        </li>
+                        <li class="navigation__point">
+                            Настройки
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__spacer"></div>
+                <div class="header__profile profile">
+                    <a href="#" class="profile__avatar">
+                        <img src="./assets/images/avatar.jpg" alt="User's photo" />
+                    </a>
+                    <div class="profile__info">
+                        <a href="#" class="profile__name">Вася Пупкин</a>
+                        <div class="profile__status">
+                            <svg class="profile__point-icon">
+                                <use xlink:href="/assets/icons/icons.svg#point"></use>
+                            </svg>
+                            Online
+                        </div>
+                    </div>
+                    <div class="profile__info-plate info-plate info-plate_small">Premium</div>
+                </div>
+            </header>
+            <section class="main-page__content">
+                <div class="content">
+                    <div class="slider">
+                        <div class="slider__header">
+                            <div class="slider__name">
+                                <h2 class="slider__title">
+                                    Популярные новые релизы
+                                </h2>
+                            </div>  
+                            <div class="slider__buttons">
+                                <button class="slider__show-all-btn button button_primary">
+                                    Все плейлисты
+                                </button>
+                                <button class="slider__left-btn button button_small button_secondary">&#10094;</button>
+                                <button class="slider__right-btn button button_small button_secondary">&#10095;</button>
+                            </div>
+                        </div>
+                        <div class="slider__items">
+                            <div class="slider__item item">
+                                <div class="item__image-wrap">
+                                    <img class="item__image" src="./assets/images/pl1.jpg" alt="PlayList #1">
+                                </div>
+                                <div class="item__title">Jarní chill</div>
+                                <div class="item__sub-title">Jarní chill, co prolomí ledy a povolí i poslední zbytky únorového sněhu.</div>
+                                <div class="item__footer">
+                                    <div class="item__date">
+                                        01.02.2022
+                                    </div>
+                                    <button class="item__button button button_primary">
+                                        Слушать
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider__item item">
+                                <div class="item__image-wrap">
+                                    <img class="item__image" src="./assets/images/pl2.jpg" alt="PlayList #2">
+                                </div>
+                                <div class="item__title">Popová nostalgie</div>
+                                <div class="item__sub-title">Ty největší CZ & SK hity z přelomu 90. let a nového milénia.</div>
+                                <div class="item__footer">
+                                    <div class="item__date">
+                                        03.02.2022
+                                    </div>
+                                    <button class="item__button button button_primary">
+                                        Слушать
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider__item item">
+                                <div class="item__image-wrap">
+                                    <img class="item__image" src="./assets/images/pl3.jpg" alt="PlayList #3">
+                                </div>
+                                <div class="item__title">Vlna Radosti</div>
+                                <div class="item__sub-title">Hity, které tě povzbudí a naladí na vlnu dobré nálady.</div>
+                                <div class="item__footer">
+                                    <div class="item__date">
+                                        08.02.2022
+                                    </div>
+                                    <button class="item__button button button_primary">
+                                        Слушать
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider__item item">
+                                <div class="item__image-wrap">
+                                    <img class="item__image" src="./assets/images/pl4.jpg" alt="PlayList #4">
+                                </div>
+                                <div class="item__title">New Music Friday CZ&SK</div>
+                                <div class="item__sub-title">Výběr hudebních novinek, které vyšly tento týden. Cover: Rytmus, Stevie </div>
+                                <div class="item__footer">
+                                    <div class="item__date">
+                                        10.02.2022
+                                    </div>
+                                    <button class="item__button button button_primary">
+                                        Слушать
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider__item item">
+                                <div class="item__image-wrap">
+                                    <img class="item__image" src="./assets/images/pl5.jpg" alt="PlayList #5">
+                                </div>
+                                <div class="item__title">Rocková vzpruha</div>
+                                <div class="item__sub-title">Rockové legeny a epické písně, které ti vlejou energii do žil.</div>
+                                <div class="item__footer">
+                                    <div class="item__date">
+                                        10.02.2022
+                                    </div>
+                                    <button class="item__button button button_primary">
+                                        Слушать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>

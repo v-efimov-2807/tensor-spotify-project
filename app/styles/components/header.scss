@@ -1,0 +1,40 @@
+@import '../common/variables.scss';
+
+.header {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $background-color;
+    border-bottom: 1px solid $gray-border;
+}
+
+.header__spacer {
+    flex-grow: 1;
+}
+
+.header__info-blocks {
+    display: flex;
+    padding: 21px 0px;
+    margin-right: 13px;
+
+    @media (max-width: $between-mobile-tablet) {
+        display: none;
+    }
+}
+
+.header__profile {
+    padding: 14px 45px 14px 0px;
+
+    @media (max-width: $tablet-break) {
+        padding-right: 35px;
+    }
+
+    @media (max-width: $mobile-break) {
+        padding-right: 15px;
+    }
+}

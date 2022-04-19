@@ -1,0 +1,40 @@
+@import '../common/variables.scss';
+
+.navigation {
+    display: flex;
+    align-items: center;
+    padding: 26px 0px 26px 55px;
+
+    @media (max-width: $tablet-break) {
+        padding-left: 35px;
+    }
+
+    @media (max-width: $mobile-break) {
+        padding-left: 15px;
+    }
+}
+
+.navigation__point {
+    color: $secondary-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+
+    &:hover {
+        color: $white;
+    }
+
+    &:last-child {
+        padding-right: 28px;
+        border-right: 1px solid $gray-border;
+
+        @media (max-width: $mobile-break) {
+            padding-right: 18px;
+        }
+    }
+
+    &:not(:last-child) {
+        margin-right: 23px;
+    }
+}

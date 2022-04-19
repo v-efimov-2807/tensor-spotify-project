@@ -1,0 +1,52 @@
+@import '../common/fonts.scss';
+@import '../common/variables.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing:  border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Jost';
+}
+
+:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+h1, h2, h3 {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+li {
+    list-style-type: none; 
+}
+
+ul {
+    margin-left: 0; 
+    padding-left: 0;
+}
+
+.hidden {
+    display: none;
+}
